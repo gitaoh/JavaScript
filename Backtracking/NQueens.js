@@ -1,8 +1,6 @@
 class NQueens {
   constructor(size) {
-    if (size < 0) {
-      throw RangeError('Invalid board size')
-    }
+    if (size < 0) throw RangeError('Invalid board size')
     this.board = new Array(size).fill('.').map(() => new Array(size).fill('.'))
     this.size = size
     this.solutionCount = 0
@@ -12,19 +10,15 @@ class NQueens {
     // function to check if the placement of the queen in the given location is valid
 
     // checking the left of the current row
-    for (let i = 0; i < col; i++) {
-      if (this.board[row][i] === 'Q') return false
-    }
+    for (let i = 0; i < col; i++) if (this.board[row][i] === 'Q') return false
 
     // checking the upper left diagonal
-    for (let i = row, j = col; i >= 0 && j >= 0; i--, j--) {
+    for (let i = row, j = col; i >= 0 && j >= 0; i--, j--)
       if (this.board[i][j] === 'Q') return false
-    }
 
     // checking the lower left diagonal
-    for (let i = row, j = col; j >= 0 && i < this.size; i++, j--) {
+    for (let i = row, j = col; j >= 0 && i < this.size; i++, j--)
       if (this.board[i][j] === 'Q') return false
-    }
 
     return true
   }
@@ -55,12 +49,8 @@ class NQueens {
   }
 
   printBoard(output = (value) => console.log(value)) {
-    if (!output._isMockFunction) {
-      output('\n')
-    }
-    for (const row of this.board) {
-      output(row)
-    }
+    if (!output._isMockFunction) output('\n')
+    for (const row of this.board) output(row)
   }
 }
 

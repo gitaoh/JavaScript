@@ -5,7 +5,7 @@ class Sudoku {
   }
 
   findEmptyCell() {
-    // Find a empty cell in the board (returns [-1, -1] if all cells are filled)
+    // Find an empty cell in the board (returns [-1, -1] if all cells are filled)
     for (let i = 0; i < 9; i++) {
       for (let j = 0; j < 9; j++) {
         if (this.board[i][j] === 0) return [i, j]

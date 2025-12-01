@@ -1,4 +1,4 @@
-/*
+/**
  * Problem Statement:
  * - Given a NxN grid, find whether rat in cell [0, 0] can reach the target in cell [N-1, N-1]
  * - The grid is represented as an array of rows. Each row is represented as an array of 0 or 1 values.
@@ -8,9 +8,7 @@
  * Reference for this problem: https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
  *
  * Based on the original implementation contributed by Chiranjeev Thapliyal (https://github.com/chiranjeev-thapliyal).
- */
-
-/**
+ *
  * Checks if the given grid is valid.
  *
  * A grid needs to satisfy these conditions:

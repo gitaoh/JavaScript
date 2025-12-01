@@ -1,4 +1,4 @@
-/*
+/**
  * Setting Bit: https://www.geeksforgeeks.org/set-k-th-bit-given-number/
  *
  * To set any bit we use bitwise OR (|) operator.

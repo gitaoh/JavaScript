@@ -1,4 +1,4 @@
-/*
+/**
  *
  *  Sum of Subset problem
  *
@@ -7,9 +7,6 @@
  *  of its elements equals to the given value K.
  *
  *  More info: https://www.geeksforgeeks.org/subset-sum-backtracking-4/
- */
-
-/*
  * @param {number[]} set Original set of numbers
  * @param {number[]} subset Subset being evaluated
  * @param {number} setIndex Index from set of last element in subset

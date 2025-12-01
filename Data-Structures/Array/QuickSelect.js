@@ -8,7 +8,6 @@
  *
  * @complexity: O(n) (on average )
  * @complexity: O(n^2) (worst case)
- * @flow
  */
 
 function QuickSelect(items, kth) {
